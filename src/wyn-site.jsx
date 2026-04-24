@@ -314,11 +314,246 @@ const solutionIcons = [Icons.Compass, Icons.CheckShield, Icons.Briefcase];
 const b2bIcons = [Icons.Target, Icons.Coin, Icons.BarChart, Icons.Globe];
 const moroccoIcons = [Icons.DollarSign, Icons.Globe, Icons.Award, Icons.Plane];
 
+const legalContent = {
+  fr: {
+    legal: {
+      title: "Mentions légales",
+      sections: [
+        {
+          heading: "Éditeur du site",
+          body: `Le site WYN (whatsyournext.ma) est édité par la société ADITYA, société à responsabilité limitée au capital de 100 000 MAD, dont le siège social est situé à Casablanca, Maroc.\n\nNuméro d'immatriculation RC : en cours d'enregistrement\nIdentifiant fiscal : en cours\nEmail de contact : contact@aditya.ma`,
+        },
+        {
+          heading: "Directeur de la publication",
+          body: "Le directeur de la publication est le gérant de la société ADITYA.",
+        },
+        {
+          heading: "Hébergement",
+          body: "Le site est hébergé par Vercel Inc., 340 Pine Street, Suite 701, San Francisco, CA 94104, États-Unis.",
+        },
+        {
+          heading: "Propriété intellectuelle",
+          body: "L'ensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes, sons, logiciels…) est la propriété exclusive d'ADITYA ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable d'ADITYA.",
+        },
+        {
+          heading: "Limitation de responsabilité",
+          body: "ADITYA s'efforce de fournir sur le site WYN des informations aussi précises que possible. Toutefois, ADITYA ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.\n\nLes informations présentes sur le site sont données à titre indicatif et sont susceptibles d'évoluer. Par ailleurs, les renseignements figurant sur ce site ne sont pas exhaustifs.",
+        },
+        {
+          heading: "Données personnelles",
+          body: "Conformément au RGPD et à la loi 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression de vos données. Pour exercer ce droit, adressez-vous à : privacy@aditya.ma",
+        },
+        {
+          heading: "Cookies",
+          body: "Le site WYN utilise des cookies à des fins de mesure d'audience et d'amélioration de l'expérience utilisateur. Vous pouvez configurer votre navigateur pour refuser les cookies. Le refus d'installation d'un cookie peut entraîner l'impossibilité d'accéder à certains services.",
+        },
+        {
+          heading: "Droit applicable",
+          body: "Tout litige en relation avec l'utilisation du site WYN est soumis au droit marocain. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Casablanca.",
+        },
+      ],
+    },
+    privacy: {
+      title: "Politique de confidentialité",
+      intro: "Chez WYN, la protection de vos données personnelles est une priorité. Cette politique explique quelles données nous collectons, pourquoi, et comment nous les protégeons.",
+      sections: [
+        {
+          heading: "1. Qui sommes-nous ?",
+          body: "WYN est une plateforme développée par ADITYA (Casablanca, Maroc). En utilisant WYN, vous confiez vos données à ADITYA, responsable de traitement au sens du RGPD et de la loi marocaine 09-08.\n\nContact DPO : privacy@aditya.ma",
+        },
+        {
+          heading: "2. Données collectées",
+          body: "Nous collectons uniquement les données nécessaires au fonctionnement du service :\n\n• Données d'identification : nom, prénom, adresse e-mail lors de l'inscription.\n• Données de profil : résultats du test psychométrique RIASEC, champs d'intérêt, ville, niveau d'études.\n• Données d'usage : pages visitées, clics, durée de session — collectées de manière anonymisée via des outils d'analyse.\n• Données de communication : messages envoyés via notre formulaire de contact ou notre support.\n\nNous ne collectons pas de données sensibles (origine ethnique, opinion politique, santé, biométrie).",
+        },
+        {
+          heading: "3. Finalités et bases légales",
+          body: "Vos données sont traitées pour les finalités suivantes :\n\n• Fourniture du service (orientation, recherche d'école, matching emploi) — base légale : exécution du contrat.\n• Amélioration du produit et personnalisation — base légale : intérêt légitime.\n• Envoi de communications (newsletters, alertes) — base légale : consentement.\n• Obligations légales et comptables — base légale : obligation légale.",
+        },
+        {
+          heading: "4. Partage des données",
+          body: "Nous ne vendons jamais vos données personnelles. Nous pouvons les partager avec :\n\n• Nos sous-traitants techniques (hébergement, analytics) liés par des accords de confidentialité.\n• Les établissements scolaires partenaires, uniquement si vous avez explicitement manifesté votre intérêt pour l'un d'eux.\n• Les autorités compétentes si la loi l'exige.\n\nTout transfert hors du Maroc est encadré par des garanties appropriées (clauses contractuelles types ou pays adéquat).",
+        },
+        {
+          heading: "5. Conservation des données",
+          body: "Vos données sont conservées pendant la durée de votre utilisation active du service, puis archivées pendant 3 ans à compter de votre dernière connexion, sauf obligation légale de conservation plus longue.\n\nLes données d'analyse anonymisées sont conservées 26 mois.",
+        },
+        {
+          heading: "6. Vos droits",
+          body: "Conformément au RGPD et à la loi 09-08, vous disposez des droits suivants :\n\n• Droit d'accès : obtenir une copie de vos données.\n• Droit de rectification : corriger des données inexactes.\n• Droit à l'effacement : demander la suppression de vos données (« droit à l'oubli »).\n• Droit à la portabilité : recevoir vos données dans un format structuré.\n• Droit d'opposition : vous opposer à certains traitements.\n• Droit de retrait du consentement : à tout moment pour les traitements basés sur votre consentement.\n\nPour exercer vos droits : privacy@aditya.ma. Nous répondons dans un délai de 30 jours.",
+        },
+        {
+          heading: "7. Sécurité",
+          body: "Nous mettons en œuvre des mesures techniques et organisationnelles adaptées : chiffrement des données en transit (TLS), hachage des mots de passe, accès restreint aux données en interne, audits de sécurité réguliers.",
+        },
+        {
+          heading: "8. Cookies et traceurs",
+          body: "Nous utilisons :\n\n• Cookies essentiels : indispensables au fonctionnement du site (session, authentification).\n• Cookies d'analyse : mesure d'audience anonymisée (Plausible Analytics — sans cookie tiers).\n• Cookies de préférence : mémorisation de vos choix (langue, thème).\n\nVous pouvez gérer vos préférences de cookies depuis les paramètres de votre navigateur.",
+        },
+        {
+          heading: "9. Modifications",
+          body: "Nous nous réservons le droit de modifier cette politique à tout moment. En cas de changement substantiel, vous serez notifié par e-mail ou via une bannière sur le site. La date de dernière mise à jour est indiquée ci-dessous.",
+        },
+        {
+          heading: "10. Contact",
+          body: "Pour toute question relative à la protection de vos données :\n\nADITYA — DPO\nCasablanca, Maroc\nprivacy@aditya.ma\n\nDernière mise à jour : avril 2026",
+        },
+      ],
+    },
+  },
+  en: {
+    legal: {
+      title: "Legal Notice",
+      sections: [
+        {
+          heading: "Publisher",
+          body: `The WYN website (whatsyournext.ma) is published by ADITYA, a limited liability company with share capital of MAD 100,000, headquartered in Casablanca, Morocco.\n\nRegistration number: pending\nTax ID: pending\nContact email: contact@aditya.ma`,
+        },
+        {
+          heading: "Publication Director",
+          body: "The publication director is the managing director of ADITYA.",
+        },
+        {
+          heading: "Hosting",
+          body: "The site is hosted by Vercel Inc., 340 Pine Street, Suite 701, San Francisco, CA 94104, United States.",
+        },
+        {
+          heading: "Intellectual Property",
+          body: "All content on this site (texts, images, graphics, logos, icons, sounds, software…) is the exclusive property of ADITYA or its partners. Any reproduction, representation, modification, publication, or adaptation — in whole or in part — of site elements, by any means or process, is prohibited without prior written authorization from ADITYA.",
+        },
+        {
+          heading: "Limitation of Liability",
+          body: "ADITYA strives to provide accurate information on the WYN site. However, ADITYA cannot be held responsible for omissions, inaccuracies, or update failures, whether caused by ADITYA or third-party partners providing the information.\n\nInformation on the site is provided for informational purposes and is subject to change. It is not exhaustive.",
+        },
+        {
+          heading: "Personal Data",
+          body: "In accordance with GDPR and Moroccan Law 09-08 on the protection of personal data, you have the right to access, correct, oppose, and delete your data. To exercise this right, contact: privacy@aditya.ma",
+        },
+        {
+          heading: "Cookies",
+          body: "WYN uses cookies for audience measurement and user experience improvement. You may configure your browser to refuse cookies. Refusing cookies may prevent access to certain features.",
+        },
+        {
+          heading: "Applicable Law",
+          body: "Any dispute relating to the use of the WYN site is subject to Moroccan law. Exclusive jurisdiction is granted to the competent courts of Casablanca.",
+        },
+      ],
+    },
+    privacy: {
+      title: "Privacy Policy",
+      intro: "At WYN, protecting your personal data is a priority. This policy explains what data we collect, why, and how we protect it.",
+      sections: [
+        {
+          heading: "1. Who are we?",
+          body: "WYN is a platform developed by ADITYA (Casablanca, Morocco). By using WYN, you entrust your data to ADITYA, the data controller under GDPR and Moroccan Law 09-08.\n\nDPO contact: privacy@aditya.ma",
+        },
+        {
+          heading: "2. Data collected",
+          body: "We only collect data necessary for the service:\n\n• Identification data: name, email address at registration.\n• Profile data: RIASEC psychometric test results, interests, city, education level.\n• Usage data: pages visited, clicks, session duration — collected anonymously via analytics tools.\n• Communication data: messages sent via our contact form or support.\n\nWe do not collect sensitive data (ethnic origin, political opinion, health, biometrics).",
+        },
+        {
+          heading: "3. Purposes and legal bases",
+          body: "Your data is processed for the following purposes:\n\n• Service delivery (guidance, school search, job matching) — legal basis: contract performance.\n• Product improvement and personalization — legal basis: legitimate interest.\n• Communications (newsletters, alerts) — legal basis: consent.\n• Legal and accounting obligations — legal basis: legal obligation.",
+        },
+        {
+          heading: "4. Data sharing",
+          body: "We never sell your personal data. We may share it with:\n\n• Our technical subcontractors (hosting, analytics) bound by confidentiality agreements.\n• Partner schools, only if you have explicitly expressed interest in one.\n• Competent authorities when required by law.\n\nAny transfer outside Morocco is governed by appropriate safeguards (standard contractual clauses or adequate country).",
+        },
+        {
+          heading: "5. Data retention",
+          body: "Your data is retained for the duration of your active use of the service, then archived for 3 years from your last login, unless a longer retention period is legally required.\n\nAnonymized analytics data is retained for 26 months.",
+        },
+        {
+          heading: "6. Your rights",
+          body: "Under GDPR and Law 09-08, you have the following rights:\n\n• Right of access: obtain a copy of your data.\n• Right to rectification: correct inaccurate data.\n• Right to erasure: request deletion of your data (\"right to be forgotten\").\n• Right to data portability: receive your data in a structured format.\n• Right to object: object to certain processing activities.\n• Right to withdraw consent: at any time for consent-based processing.\n\nTo exercise your rights: privacy@aditya.ma. We respond within 30 days.",
+        },
+        {
+          heading: "7. Security",
+          body: "We implement appropriate technical and organizational measures: encryption of data in transit (TLS), password hashing, restricted internal data access, regular security audits.",
+        },
+        {
+          heading: "8. Cookies and trackers",
+          body: "We use:\n\n• Essential cookies: required for site functionality (session, authentication).\n• Analytics cookies: anonymous audience measurement (Plausible Analytics — no third-party cookies).\n• Preference cookies: remembering your choices (language, theme).\n\nYou can manage cookie preferences from your browser settings.",
+        },
+        {
+          heading: "9. Changes",
+          body: "We reserve the right to modify this policy at any time. For substantial changes, you will be notified by email or via a banner on the site. The last update date is shown below.",
+        },
+        {
+          heading: "10. Contact",
+          body: "For any questions about data protection:\n\nADITYA — DPO\nCasablanca, Morocco\nprivacy@aditya.ma\n\nLast updated: April 2026",
+        },
+      ],
+    },
+  },
+};
+
+function LegalPage({ type, lang, dark, C, onClose }) {
+  const data = legalContent[lang][type];
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+  return (
+    <div style={{ position: "fixed", inset: 0, zIndex: 300, background: C.bg, overflowY: "auto" }}>
+      {/* Header */}
+      <div style={{ position: "sticky", top: 0, background: C.navBg, backdropFilter: "blur(14px)", borderBottom: `1px solid ${C.border}`, zIndex: 10 }}>
+        <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 24px", height: 62, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span style={{ fontFamily: "'DM Mono', monospace", fontWeight: 500, fontSize: 18, color: C.text, letterSpacing: -0.5 }}>
+            WYN<span style={{ color: "#1B6B50" }}>.</span>
+          </span>
+          <button onClick={onClose} style={{ display: "flex", alignItems: "center", gap: 8, background: "none", border: `1px solid ${C.border}`, borderRadius: 6, padding: "7px 16px", cursor: "pointer", color: C.textMuted, fontSize: 13, fontFamily: "inherit", fontWeight: 500 }}>
+            <Icons.X /> {lang === "fr" ? "Fermer" : "Close"}
+          </button>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div style={{ maxWidth: 760, margin: "0 auto", padding: "56px 24px 96px" }}>
+        <div className="mono pill" style={{ background: dark ? "rgba(27,107,80,0.25)" : "#E8F5EE", color: dark ? "#6ECBA8" : "#1B6B50", marginBottom: 20, fontSize: 11, letterSpacing: "0.1em" }}>
+          {lang === "fr" ? "ADITYA · CASABLANCA, MAROC" : "ADITYA · CASABLANCA, MOROCCO"}
+        </div>
+        <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 700, letterSpacing: "-1.5px", color: C.text, marginBottom: 48, lineHeight: 1.1 }}>
+          {data.title}
+        </h1>
+
+        {type === "privacy" && data.intro && (
+          <p style={{ fontSize: 16, color: C.textSub, lineHeight: 1.8, marginBottom: 48, padding: "20px 24px", background: dark ? "rgba(27,107,80,0.1)" : "#E8F5EE", borderRadius: 8, borderLeft: "3px solid #1B6B50" }}>
+            {data.intro}
+          </p>
+        )}
+
+        {data.sections.map((s, i) => (
+          <div key={i} style={{ marginBottom: 44, paddingBottom: 44, borderBottom: i < data.sections.length - 1 ? `1px solid ${C.border}` : "none" }}>
+            <h2 style={{ fontSize: 17, fontWeight: 600, color: C.text, marginBottom: 14, display: "flex", alignItems: "center", gap: 10 }}>
+              <span style={{ display: "inline-block", width: 4, height: 18, background: "#1B6B50", borderRadius: 2, flexShrink: 0 }} />
+              {s.heading}
+            </h2>
+            <div style={{ fontSize: 14.5, color: C.textSub, lineHeight: 1.85, whiteSpace: "pre-line" }}>
+              {s.body}
+            </div>
+          </div>
+        ))}
+
+        <div style={{ marginTop: 64, padding: "24px", background: C.bgCard, borderRadius: 10, border: `1px solid ${C.border}`, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+          <div>
+            <div style={{ fontSize: 13, fontWeight: 600, color: C.text, marginBottom: 4 }}>ADITYA</div>
+            <div style={{ fontSize: 12.5, color: C.textMuted }}>Casablanca, Maroc · privacy@aditya.ma</div>
+          </div>
+          <button onClick={onClose} className="btn btn-primary" style={{ fontSize: 13, padding: "10px 22px" }}>
+            {lang === "fr" ? "Retour au site" : "Back to site"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function WYNSite() {
   const [lang, setLang] = useState("fr");
   const [menuOpen, setMenuOpen] = useState(false);
   const [dark, setDark] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const [legalPage, setLegalPage] = useState(null);
   const t = content[lang];
 
   const C = {
@@ -356,6 +591,7 @@ export default function WYNSite() {
 
   return (
     <div style={{ fontFamily: "'Sora', 'DM Sans', 'Helvetica Neue', sans-serif", color: C.text, background: C.bg, minHeight: "100vh", overflowX: "hidden", transition: "background 0.3s, color 0.3s" }}>
+      {legalPage && <LegalPage type={legalPage} lang={lang} dark={dark} C={C} onClose={() => setLegalPage(null)} />}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -454,20 +690,21 @@ export default function WYNSite() {
           </div>
         </div>
 
-        {/* Mobile overlay menu */}
-        {menuOpen && (
-          <div className="mobile-overlay" style={{ position: "fixed", top: 62, left: 0, right: 0, bottom: 0, background: C.bg, padding: "28px 24px", display: "flex", flexDirection: "column", gap: 8, zIndex: 199, overflowY: "auto" }}>
-            {[["solution", t.nav.howItWorks], ["schools", t.nav.students], ["b2b", t.nav.schools], ["salaries", t.nav.salaries], ["about", t.nav.about]].map(([id, label]) => (
-              <button key={id} className="nav-link" onClick={() => scrollTo(id)} style={{ color: C.text, fontSize: 18, fontWeight: 500, padding: "12px 0", borderBottom: `1px solid ${C.border}`, textAlign: "left", opacity: 1 }}>
-                {label}
-              </button>
-            ))}
-            <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
-              <button className="btn btn-primary" onClick={() => scrollTo("b2b")} style={{ flex: 1 }}>{t.nav.demo}</button>
-            </div>
-          </div>
-        )}
       </nav>
+
+      {/* Mobile overlay menu */}
+      {menuOpen && (
+        <div className="mobile-overlay" style={{ position: "fixed", top: 62, left: 0, right: 0, bottom: 0, background: C.bg, padding: "28px 24px", display: "flex", flexDirection: "column", gap: 8, zIndex: 199, overflowY: "auto" }}>
+          {[["solution", t.nav.howItWorks], ["schools", t.nav.students], ["b2b", t.nav.schools], ["salaries", t.nav.salaries], ["about", t.nav.about]].map(([id, label]) => (
+            <button key={id} className="nav-link" onClick={() => scrollTo(id)} style={{ color: C.text, fontSize: 18, fontWeight: 500, padding: "12px 0", borderBottom: `1px solid ${C.border}`, textAlign: "left", opacity: 1 }}>
+              {label}
+            </button>
+          ))}
+          <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
+            <button className="btn btn-primary" onClick={() => scrollTo("b2b")} style={{ flex: 1 }}>{t.nav.demo}</button>
+          </div>
+        </div>
+      )}
 
       {/* ── HERO ── */}
       <section id="hero" style={{ paddingTop: 128, paddingBottom: 80, background: dark ? "linear-gradient(160deg, #0E0E1A 0%, #0D1F16 50%, #0E0E1A 100%)" : "linear-gradient(160deg, #F9F9F6 0%, #EAF5F0 50%, #F9F9F6 100%)", position: "relative", overflow: "hidden" }}>
@@ -810,8 +1047,8 @@ export default function WYNSite() {
           <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 22, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14 }}>
             <span style={{ fontSize: 12 }}>{t.footer.copy}</span>
             <div style={{ display: "flex", gap: 22 }}>
-              <span style={{ fontSize: 12, cursor: "pointer" }}>{t.footer.legal}</span>
-              <span style={{ fontSize: 12, cursor: "pointer" }}>{t.footer.privacy}</span>
+              <span style={{ fontSize: 12, cursor: "pointer", transition: "color 0.2s" }} onClick={() => setLegalPage("legal")} onMouseEnter={e => e.target.style.color = "#fff"} onMouseLeave={e => e.target.style.color = ""}>{t.footer.legal}</span>
+              <span style={{ fontSize: 12, cursor: "pointer", transition: "color 0.2s" }} onClick={() => setLegalPage("privacy")} onMouseEnter={e => e.target.style.color = "#fff"} onMouseLeave={e => e.target.style.color = ""}>{t.footer.privacy}</span>
             </div>
           </div>
         </div>
