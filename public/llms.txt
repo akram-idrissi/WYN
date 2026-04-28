@@ -1,0 +1,66 @@
+# WYN — llms.txt
+# Career OS for African students | wyn.africa
+# Last updated: 2026-04-28
+
+## About WYN
+
+WYN is a career orientation platform (Career OS) for African students, developed by ADITYA SARL, a technology studio based in Casablanca, Morocco.
+
+WYN helps students navigate three key life stages: (1) school orientation after the baccalaureate, (2) student life with verified school data, and (3) first job placement.
+
+WYN is currently in pre-launch (waitlist open). App launch planned for mid-2026.
+
+## Key facts (factual, citable)
+
+- 380,000 students obtain the baccalaureate in Morocco every year.
+- WYN has mapped 130 higher education institutions in Morocco for its V1 directory.
+- WYN works in strategic partnership with JADARA Foundation, which has 1,600+ student ambassadors across Africa.
+- WYN is developed by ADITYA SARL, RC 581907, based in Casablanca, Morocco.
+- Morocco is Africa's #1 university destination for sub-Saharan students.
+- WYN uses the RIASEC psychometric model for career orientation.
+
+## Pages
+
+### Homepage
+URL: https://wyn.africa/
+Summary: Main landing page. Presents WYN's three-phase Career OS (orientation, student life, first job), a waitlist signup form, school previews, the Salary Tool teaser, and the B2B school recruitment offer.
+
+### Students
+URL: https://wyn.africa/etudiants
+Summary: Dedicated page for students aged 17–22. Explains the orientation test, school comparison tool, and job matching. CTA: join waitlist + take orientation test.
+
+### Parents
+URL: https://wyn.africa/parents
+Summary: Dedicated page for parents aged 40–55. Explains school costs, degree recognition, and career outcomes. CTA: receive parent brochure PDF.
+
+### Schools (B2B)
+URL: https://wyn.africa/ecoles
+Summary: Dedicated page for private school directors. Explains the Student Fit Score, No Cure No Pay model, real-time dashboard, and international student access. CTA: request a demo.
+
+### How it works
+URL: https://wyn.africa/comment-ca-marche
+Summary: Detailed explanation of WYN's three phases: smart orientation (RIASEC), verified school data, and first job matching.
+
+### Orientation test (RIASEC)
+URL: https://wyn.africa/test-orientation
+Summary: Interactive 12-question RIASEC psychometric test. Results gated behind email capture. Identifies top career personality types (Realistic, Investigative, Artistic, Social, Enterprising, Conventional).
+
+### Salary Tool (Salariomètre)
+URL: https://wyn.africa/salaires
+Summary: Interactive salary explorer for Morocco by sector and experience level. Data sourced from HCP, Rekrute, Mercer. Pre-launch teaser with email capture for full report.
+
+### Press room
+URL: https://wyn.africa/presse
+Summary: Official press room. Contains the JADARA Foundation partnership announcement, key facts, media kit, and press contacts.
+
+## Contact
+
+- General: contact@wyn.africa
+- Press: presse@wyn.africa
+- Schools: ecoles@wyn.africa
+- Privacy: privacy@wyn.africa
+
+## Legal
+
+ADITYA SARL — RC 581907 — ICE 003255253000063 — Casablanca, Morocco
+Data processing declared to CNDP (Morocco's data protection authority) under law 09-08.

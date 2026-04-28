@@ -1,10 +1,173 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wyn</title>
+
+    <!-- Primary meta -->
+    <title>WYN — Win temchi? De l'orientation au premier emploi</title>
+    <meta name="description" content="WYN est la plateforme Career OS pour les étudiants africains. Teste ton orientation RIASEC, compare 130 écoles vérifiées et trouve ton premier emploi." />
+    <meta name="keywords" content="orientation scolaire Maroc, écoles Maroc, études supérieures Maroc, emploi jeunes Maroc, WYN, ADITYA, carrière Afrique" />
+    <meta name="author" content="ADITYA SARL" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wyn.africa/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wyn.africa/" />
+    <meta property="og:title" content="WYN — Win temchi? De l'orientation au premier emploi" />
+    <meta property="og:description" content="La plateforme qui donne aux étudiants africains les données vérifiées pour choisir leur école, financer leurs études et lancer leur carrière." />
+    <meta property="og:image" content="https://wyn.africa/og-image.png" />
+    <meta property="og:locale" content="fr_MA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_MA" />
+    <meta property="og:site_name" content="WYN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wynAfrica" />
+    <meta name="twitter:title" content="WYN — Win temchi?" />
+    <meta name="twitter:description" content="De l'orientation au premier emploi. Le Career OS pour les étudiants africains." />
+    <meta name="twitter:image" content="https://wyn.africa/og-image.png" />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="fr" href="https://wyn.africa/" />
+    <link rel="alternate" hreflang="en" href="https://wyn.africa/en/" />
+    <link rel="alternate" hreflang="ar" href="https://wyn.africa/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://wyn.africa/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Fonts — loaded as <link> to avoid render-blocking @import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" />
+
+    <!-- Schema.org — Organization + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://wyn.africa/#organization",
+          "name": "WYN",
+          "legalName": "ADITYA SARL",
+          "url": "https://wyn.africa",
+          "logo": "https://wyn.africa/favicon.svg",
+          "foundingDate": "2025",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Casablanca",
+            "addressCountry": "MA"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@wyn.africa",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/wyn-africa",
+            "https://www.instagram.com/wyn.africa",
+            "https://www.tiktok.com/@wyn.africa"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://wyn.africa/#website",
+          "url": "https://wyn.africa",
+          "name": "WYN",
+          "description": "Le Career OS pour les étudiants africains. De l'orientation au premier emploi.",
+          "publisher": { "@id": "https://wyn.africa/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://wyn.africa/etudiants?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": ["fr", "en", "ar"]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://wyn.africa/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qu'est-ce que WYN ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WYN est une plateforme Career OS pour les étudiants africains. Elle propose un test d'orientation RIASEC, un comparateur de 130+ écoles vérifiées et un accès aux opportunités d'emploi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "WYN est-il gratuit ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'accès de base à WYN est gratuit pour les étudiants. Des fonctionnalités premium seront disponibles au lancement de l'application."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quand sort l'application WYN ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'application WYN est prévue pour mi-2026. Inscris-toi sur la waitlist pour être notifié(e) en priorité."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics 4 — replace G-XXXXXXXXXX in .env -->
+    <script>
+      window.__GA_ID = "%VITE_GA4_ID%";
+      if (window.__GA_ID && window.__GA_ID !== "%VITE_GA4_ID%") {
+        var s = document.createElement("script");
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.__GA_ID;
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", window.__GA_ID);
+      }
+    </script>
+
+    <!-- Meta Pixel — set VITE_META_PIXEL_ID in .env -->
+    <script>
+      window.__META_PIXEL_ID = "%VITE_META_PIXEL_ID%";
+      if (window.__META_PIXEL_ID && window.__META_PIXEL_ID !== "%VITE_META_PIXEL_ID%") {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", window.__META_PIXEL_ID);
+        fbq("track", "PageView");
+        window.addEventListener("wyn:cookie-consent", function(e){ if(e.detail !== "accepted") fbq("consent", "revoke"); });
+      }
+    </script>
+
+    <!-- TikTok Pixel — set VITE_TIKTOK_PIXEL_ID in .env -->
+    <script>
+      window.__TIKTOK_PIXEL_ID = "%VITE_TIKTOK_PIXEL_ID%";
+      if (window.__TIKTOK_PIXEL_ID && window.__TIKTOK_PIXEL_ID !== "%VITE_TIKTOK_PIXEL_ID%") {
+        !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=i;ttq._t=ttq._t||{};ttq._t[e]=+new Date;ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};ttq.load(window.__TIKTOK_PIXEL_ID);ttq.page()}(window,document,"ttq");
+      }
+    </script>
+
+    <!-- Plausible Analytics — set VITE_PLAUSIBLE_DOMAIN in .env -->
+    <script>
+      var plausibleDomain = "%VITE_PLAUSIBLE_DOMAIN%";
+      if (plausibleDomain && plausibleDomain !== "%VITE_PLAUSIBLE_DOMAIN%") {
+        var ps = document.createElement("script");
+        ps.defer = true;
+        ps.setAttribute("data-domain", plausibleDomain);
+        ps.src = "https://plausible.io/js/script.js";
+        document.head.appendChild(ps);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
